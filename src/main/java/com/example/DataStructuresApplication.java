@@ -1,6 +1,9 @@
 package com.example;
 
 
+import com.example.domain.sort.ArrayInput;
+import com.example.domain.sort.BubbleSort;
+import com.example.domain.sort.InsertionSort;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -26,6 +29,15 @@ public class DataStructuresApplication {
 		String time = LocalDateTime.now().toString();
 		System.out.println("********\nBuild Time: " + time
 		 + "\nJava Version: " + javaVersion + "\n********");
+
+
+		ArrayInput arrayInput = new ArrayInput();
+		int a[] = arrayInput.takeArrayInput();
+
+		BubbleSort bubbleSort = new BubbleSort();
+		bubbleSort.bubbleSort(a);
+		InsertionSort insertionSort = new InsertionSort();
+		insertionSort.insertionSort(a);
 
 
 	}
