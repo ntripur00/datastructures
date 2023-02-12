@@ -1,6 +1,8 @@
 com/example/service/ApiService.class
 com/example/domain/sort/BubbleSort.class
+com/example/domain/sort/SelectionSort.class
 com/example/DataStructuresApplication.class
+com/example/domain/sort/SwapArrayElements.class
 com/example/domain/sort/PrintArray.class
 com/example/domain/sort/ArrayInput.class
 com/example/domain/sort/InsertionSort.class
