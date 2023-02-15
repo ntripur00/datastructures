@@ -1,10 +1,7 @@
 package com.example;
 
 
-import com.example.domain.sort.ArrayInput;
-import com.example.domain.sort.BubbleSort;
-import com.example.domain.sort.InsertionSort;
-import com.example.domain.sort.SelectionSort;
+import com.example.domain.sort.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -41,6 +38,8 @@ public class DataStructuresApplication {
 		insertionSort.insertionSort(a);
 		SelectionSort selectionSort = new SelectionSort();
 		selectionSort.selectionSort(a);
+		QuickSort quickSort = new QuickSort();
+		quickSort.quickSort(a,0,a.length);
 
 
 	}
