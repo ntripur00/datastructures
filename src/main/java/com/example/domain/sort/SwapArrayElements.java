@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 public class SwapArrayElements {
 
 
-  static int [] swap(int a [] , int i, int j)
+  public static int [] swap(int a [] , int i, int j)
   {
 
     int tempo = a[i];
