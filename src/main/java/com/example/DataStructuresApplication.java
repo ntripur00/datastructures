@@ -1,6 +1,7 @@
 package com.example;
 
 
+import com.example.domain.Recursion.NFactorial;
 import com.example.domain.sort.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -30,8 +31,8 @@ public class DataStructuresApplication {
 		 + "\nJava Version: " + javaVersion + "\n********");
 
 
-		ArrayInput arrayInput = new ArrayInput();
-		int a[] = arrayInput.takeArrayInput();
+//		ArrayInput arrayInput = new ArrayInput();
+//		int a[] = arrayInput.takeArrayInput();
 
 //		BubbleSort bubbleSort = new BubbleSort();
 //		bubbleSort.bubbleSort(a);
@@ -46,10 +47,20 @@ public class DataStructuresApplication {
 //		QuickSort quickSort = new QuickSort();
 //		quickSort.quickSort(a,0,a.length-1);
 
-		Heap heap = new Heap();
-		 int [] b = heap.heapArray(a,a.length);
-	   heap.heapSort(b,b.length); //was unable to implement
-		
+//		Heap heap = new Heap();
+//		 int [] b = heap.heapArray(a,a.length);
+//	   heap.heapSort(b,b.length); //was unable to implement
+//		 int a[] = {432, 8, 530, 90, 88, 231, 11, 45, 677, 199};
+//		int a[] = {151, 259, 360, 91, 115, 706, 34, 858, 2};
+//		RadixSort radixSort = new RadixSort();
+//		  radixSort.radixSort(a,a.length);
+//		CountingSort countingSort = new CountingSort();
+//		 countingSort.countSort(a,a.length,9);
+
+//		NFactorial nFactorial = new NFactorial();
+//		 int n = nFactorial.factorial(4);
+//		 log.debug("the n! is {}",n);
+
 
 
 
