@@ -1,7 +1,8 @@
 package com.example;
 
 
-import com.example.domain.Recursion.NFactorial;
+import com.example.domain.ArraysExercise;
+import com.example.domain.Recursion.*;
 import com.example.domain.sort.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -10,6 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
+import org.springframework.security.core.parameters.P;
 
 import java.time.LocalDateTime;
 
@@ -61,7 +63,65 @@ public class DataStructuresApplication {
 //		 int n = nFactorial.factorial(4);
 //		 log.debug("the n! is {}",n);
 
+//		Fibonacci fib = new Fibonacci();
+//		  fib.findFibonacciSeries(11);
+//		SumOfDigits sumOfDigits = new SumOfDigits();
+//		 sumOfDigits.printSumofDigits(-2);
+//		PowerOfANumber powerOfANumber = new PowerOfANumber();
+//		powerOfANumber.printPowerofANumber(100,2);
+//		GCDof2Numbers gcDof2Numbers = new GCDof2Numbers();
+//		gcDof2Numbers.printGCD(48,18);
+//		DecimalToBinary decimalToBinary = new DecimalToBinary();
+//		decimalToBinary.printBinaryofDecimalAndViceVersa(7);
 
+//		int a[] = {1,2,3,4,5};
+//		int a[] = {2,6,4,8};
+//		ProductOfArray productOfArray = new ProductOfArray();
+//		 productOfArray.printProductArray(a,a.length-1);
+//		RecursiveRange recursiveRange = new RecursiveRange();
+//		recursiveRange.printRecursiveRange(10);
+//		 Reverse reverse = new Reverse();
+//		 reverse.printReverseString("nischal");
+//		 Palindrome palindrome = new Palindrome();
+//		  palindrome.printPalindromeFn("nischal");
+//			palindrome.printPalindromeFn("tacocat");
+//		SomeRecursive someRecursive = new SomeRecursive();
+//		 someRecursive.printSomeRecursive(a);
+//		FirstUppercase firstUppercase = new FirstUppercase();
+//		firstUppercase.print("nischaL");
+//		 CapitalizeWord capitalizeWord = new CapitalizeWord();
+//		  capitalizeWord.capitalizeWord("i am a king");
+
+		int intArray[] = {1, 2, 3, 4, 5, 6,7, 8, 9, 10,12};
+		ArraysExercise arraysExercise = new ArraysExercise();
+//		arraysExercise.missingNumber(intArray);
+		int [] nums = {2,7,11,15};
+		int[] a= {100,20,30,40,50,20,90};
+//		arraysExercise.pairs2Sum(nums, 17);
+//		arraysExercise.findValueInArray(intArray,10);
+//		arraysExercise.maxProduct(a);
+		int[] arr = {1,0,2,3,0,4,5,0,8,0,9,0,10,11,12};
+//		arraysExercise.duplicateZeros(arr); ;// true
+		 int nums1[]={1,2,3};
+		 int nums2[]={2,5,6};
+//		 arraysExercise.merge2ArraysInNonDescendingOrder(nums1,nums2);
+//		arraysExercise.checkIfNAndItsDoubleExists(a);
+//	 int array[] = {17,18,5,4,6,1};
+//	  int array1 [] = {400};
+//	 arraysExercise.replaceElements(array1);
+//		 int  array [] = {0,0,1,1,1,2,2,3,3,4};
+//		 arraysExercise.removeDuplicates(array);
+//		 int array[] = {0,1,0,3, 0,12};
+//		 arraysExercise.moveZeroes(array);
+		 int  array[] = {1,2,3,4,5,6,7,8,1,0};
+//		 arraysExercise.middle(array);
+//		int [][] myArray2D= {{1,2,3},{4,5,6},{7,8,9}};
+//		arraysExercise.sumOfDiagonal(myArray2D);
+		 int [] myArray = {1,2,3,4,5,6,7,8,10,11,12};
+//		  arraysExercise.missingNumber(myArray,12);
+//		arraysExercise.removeDup(new int[]{1, 1, 2, 2, 3, 4, 5});
+
+		arraysExercise.pairSum(new int[]{2, 4, 3, 5, 6, -2, 4, 7, 8, 9},7);
 
 
 

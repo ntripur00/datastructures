@@ -19,6 +19,7 @@ public class ArrayInput {
          for(int i=0; i<n;i++) {
            a[i] = scanner.nextInt();
          }
+         scanner.close();
          log.debug("the input array is {}",a);
 
        return a;
@@ -37,7 +38,7 @@ public class ArrayInput {
       a[i] = scanner.nextInt();
     }
     log.debug("the input array is {}",a);
-
+    scanner.close();
     return a;
   }
   // to add an element at the end
