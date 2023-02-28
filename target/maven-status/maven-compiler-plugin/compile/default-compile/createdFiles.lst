@@ -3,6 +3,7 @@ com/example/domain/LinkedList/LL.class
 com/example/DataStructuresApplication.class
 com/example/domain/Recursion/PowerOfANumber.class
 com/example/domain/LinkedList/Nodee.class
+com/example/domain/LinkedList/DLL$Node.class
 com/example/domain/sort/InsertionSort.class
 com/example/controller/ApiController.class
 com/example/domain/Recursion/Palindrome.class
@@ -22,6 +23,7 @@ com/example/domain/sort/MergeSort.class
 com/example/service/ApiService.class
 com/example/domain/sort/CountingSort.class
 com/example/domain/Recursion/FirstUppercase.class
+com/example/domain/LinkedList/DLL.class
 com/example/domain/sort/Heap.class
 com/example/domain/sort/SwapArrayElements.class
 com/example/domain/Recursion/GCDof2Numbers.class

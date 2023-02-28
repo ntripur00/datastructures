@@ -2,6 +2,7 @@ package com.example;
 
 
 import com.example.domain.ArraysExercise;
+import com.example.domain.LinkedList.DLL;
 import com.example.domain.LinkedList.LL;
 import com.example.domain.LinkedList.SinglyLinkedList;
 import com.example.domain.Recursion.*;
@@ -136,25 +137,41 @@ public class DataStructuresApplication {
 //		 singlyLinkedList.deleteNode(6);
 //		singlyLinkedList.traverseSinglyLinkedList();
 
-		LL ll = new LL();
-		ll.display();
-		ll.insertFirst(4);
-		ll.insertFirst(7);
-		ll.display();
-		ll.insertLast(8);
-		ll.insertLast(9);
-		ll.display();
-		ll.insertAtIndex(10,2);
-		ll.insertAtIndex(11,5);
-		ll.display();
-		ll.get(1);
-		ll.find(8);
-		ll.deleteFirst();
-		ll.display();
-		ll.deleteLast();
-		ll.display();
-		ll.deleteAtIndex(2);
-		ll.display();
+//		LL ll = new LL();
+//		ll.display();
+//		ll.insertFirst(4);
+//		ll.insertFirst(7);
+//		ll.display();
+//		ll.insertLast(8);
+//		ll.insertLast(9);
+//		ll.display();
+//		ll.insertAtIndex(10,2);
+//		ll.insertAtIndex(11,5);
+//		ll.display();
+//		ll.get(1);
+//		ll.find(8);
+//		ll.deleteFirst();
+//		ll.display();
+//		ll.deleteLast();
+//		ll.display();
+//		ll.deleteAtIndex(2);
+//		ll.display();
+
+
+		DLL dll = new DLL();
+		 dll.insertFirst(4);
+		 dll.insertFirst(3);
+		 dll.insertFirst(2);
+		 dll.insertFirst(1);
+		 dll.display();
+		 dll.displayReverse();
+		 dll.insertLast(5);
+		 dll.display();
+		 dll.insertAtIndex(10,2);
+		 dll.display();
+		dll.insertAtIndex(11,0);
+		dll.display();
+
 
 
 
