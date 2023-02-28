@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Getter
 @Setter
-public class Node {
+public class Nodee {
     private int nodeValue ;
-    private Node next;
+    private Nodee next;
 
 }

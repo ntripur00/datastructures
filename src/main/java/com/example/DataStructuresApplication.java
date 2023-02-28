@@ -2,6 +2,8 @@ package com.example;
 
 
 import com.example.domain.ArraysExercise;
+import com.example.domain.LinkedList.LL;
+import com.example.domain.LinkedList.SinglyLinkedList;
 import com.example.domain.Recursion.*;
 import com.example.domain.sort.*;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +16,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.security.core.parameters.P;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @SpringBootApplication
 @PropertySources ( {
@@ -121,7 +124,39 @@ public class DataStructuresApplication {
 //		  arraysExercise.missingNumber(myArray,12);
 //		arraysExercise.removeDup(new int[]{1, 1, 2, 2, 3, 4, 5});
 
-		arraysExercise.pairSum(new int[]{2, 4, 3, 5, 6, -2, 4, 7, 8, 9},7);
+//		arraysExercise.pairSum(new int[]{2, 4, 3, 5, 6, -2, 4, 7, 8, 9},7);
+//		SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+//		singlyLinkedList.createSinglyLinkedList(5);
+//		singlyLinkedList.insertInLinkedList(6,1);
+//		singlyLinkedList.insertInLinkedList(7,3);
+//		singlyLinkedList.insertInLinkedList(8,4);
+//		singlyLinkedList.insertInLinkedList(9,5);
+//		 singlyLinkedList.traverseSinglyLinkedList();
+//		 singlyLinkedList.searchNode(7);
+//		 singlyLinkedList.deleteNode(6);
+//		singlyLinkedList.traverseSinglyLinkedList();
+
+		LL ll = new LL();
+		ll.display();
+		ll.insertFirst(4);
+		ll.insertFirst(7);
+		ll.display();
+		ll.insertLast(8);
+		ll.insertLast(9);
+		ll.display();
+		ll.insertAtIndex(10,2);
+		ll.insertAtIndex(11,5);
+		ll.display();
+		ll.get(1);
+		ll.find(8);
+		ll.deleteFirst();
+		ll.display();
+		ll.deleteLast();
+		ll.display();
+		ll.deleteAtIndex(2);
+		ll.display();
+
+
 
 
 

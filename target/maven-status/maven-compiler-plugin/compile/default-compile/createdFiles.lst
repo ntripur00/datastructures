@@ -1,9 +1,12 @@
 com/example/domain/sort/BubbleSort.class
+com/example/domain/LinkedList/LL.class
 com/example/DataStructuresApplication.class
 com/example/domain/Recursion/PowerOfANumber.class
+com/example/domain/LinkedList/Nodee.class
 com/example/domain/sort/InsertionSort.class
 com/example/controller/ApiController.class
 com/example/domain/Recursion/Palindrome.class
+com/example/domain/LinkedList/LL$Node.class
 com/example/domain/sort/QuickSort.class
 com/example/domain/ArraysExercise.class
 com/example/domain/Recursion/Reverse.class
@@ -26,4 +29,5 @@ com/example/domain/Recursion/ProductOfArray.class
 com/example/domain/sort/RadixSort.class
 com/example/domain/Recursion/SomeRecursive.class
 com/example/domain/Recursion/CapitalizeWord.class
+com/example/domain/LinkedList/SinglyLinkedList.class
 com/example/service/ApiServiceImpl.class
