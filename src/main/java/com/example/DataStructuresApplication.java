@@ -2,6 +2,7 @@ package com.example;
 
 
 import com.example.domain.ArraysExercise;
+import com.example.domain.LinkedList.CircularLL;
 import com.example.domain.LinkedList.DLL;
 import com.example.domain.LinkedList.LL;
 import com.example.domain.LinkedList.SinglyLinkedList;
@@ -156,21 +157,32 @@ public class DataStructuresApplication {
 //		ll.display();
 //		ll.deleteAtIndex(2);
 //		ll.display();
+//		ll.insertRecursion(99,4);
+//		ll.insertEndRecursion(100);
+//		ll.display();
 
+//		DLL dll = new DLL();
+//		 dll.insertFirst(4);
+//		 dll.insertFirst(3);
+//		 dll.insertFirst(2);
+//		 dll.insertFirst(1);
+//		 dll.display();
+//		 dll.displayReverse();
+//		 dll.insertLast(5);
+//		 dll.display();
+//		 dll.insertAtIndex(10,2);
+//		 dll.display();
+//		dll.insertAtIndex(11,0);
+//		dll.display();
 
-		DLL dll = new DLL();
-		 dll.insertFirst(4);
-		 dll.insertFirst(3);
-		 dll.insertFirst(2);
-		 dll.insertFirst(1);
-		 dll.display();
-		 dll.displayReverse();
-		 dll.insertLast(5);
-		 dll.display();
-		 dll.insertAtIndex(10,2);
-		 dll.display();
-		dll.insertAtIndex(11,0);
-		dll.display();
+//		CircularLL circularLL = new CircularLL();
+//		circularLL.display();
+//		circularLL.insert(10);
+//		circularLL.insert(20);
+//		circularLL.insert(50);
+//		circularLL.display();
+//		circularLL.delete(20);
+//		circularLL.display();
 
 
 

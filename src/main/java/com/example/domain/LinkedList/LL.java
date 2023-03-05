@@ -51,6 +51,38 @@ public class LL {
     size += 1;
   }
 
+  public  void insertRecursion( int value, int index){
+      head = insertRecursion( value,index,head);
+
+  }
+
+   public  Node insertRecursion( int value, int index, Node node){
+     if( index == 0){
+        Node temp = new Node(value,node);
+         size ++;
+         return temp;
+     }
+
+      node.next = insertRecursion( value,index-1,node.next);
+      return node;
+   }
+
+
+
+    public void insertEndRecursion(int value){
+     head = insertEndRecursion(value,head);
+    }
+
+    public   Node  insertEndRecursion( int value, Node head){
+     if(head == null){
+       Node node = new Node(value);
+       size++;
+        return  node;
+     }
+       head.next = insertEndRecursion( value,head.next);
+      return head;
+    }
+
   public int deleteFirst() {
     int val = head.value;
     head = head.next;
@@ -96,6 +128,7 @@ public class LL {
     return node;
   }
 
+
   public Node find(int value) {
     Node node = head;
     while (node != null) {
@@ -117,6 +150,83 @@ public class LL {
     }
     System.out.println("END");
   }
+
+   //
+  public void removeDuplicates(){
+     Node node  = head;
+      while (node.next!=null){
+        if(node.value == node.next.value){
+          node.next = node.next.next;
+          size--;
+        }
+        else{
+          node = node.next;
+        }
+      }
+      tail = node;
+      tail.next = null;
+
+  }
+  //merge 2 sorted lists
+
+
+  public static void main(String[] args) {
+
+//    ll.insertLast(1);
+//    ll.insertLast(1);
+//    ll.insertLast(2);
+//    ll.insertLast(3);
+//    ll.insertLast(3);
+//    ll.insertLast(4);
+//    ll.insertLast(4);
+//    ll.display();
+//    ll.removeDuplicates();
+//    ll.display();
+     LL first = new LL();
+     LL second = new LL();
+
+    first.insertLast(1);
+    first.insertLast(3);
+    first.insertLast(5);
+
+    second.insertLast(1);
+    second.insertLast(2);
+    second.insertLast(9);
+    second.insertLast(14);
+
+     LL ans = LL.merge2SortedListed(first,second);
+    ans.display();
+
+
+
+  }
+
+  private static LL merge2SortedListed(LL first, LL second) {
+      Node f = first.head;
+      Node s = second.head;
+       LL ans = new LL();
+       while (f!= null && s!=null){
+          if(f.value <s.value){
+            ans.insertLast(f.value);
+            f = f.next;
+          }
+          else {
+            ans.insertLast(s.value);
+            s = s.next;
+          }
+       }
+        while (f!=null){
+          ans.insertLast(f.value);
+          f = f.next;
+        }
+        while (s!=null){
+          ans.insertLast(s.value);
+          s = s.next;
+        }
+
+        return  ans;
+  }
+
 
   private class Node {
     private int value;
